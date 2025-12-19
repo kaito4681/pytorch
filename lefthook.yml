@@ -1,0 +1,9 @@
+#   Refer for explanation to following link:
+#   https://lefthook.dev/configuration/
+pre-commit:
+  parallel: false
+  jobs:
+    - run: mise run lint {staged_files}
+      glob: "*.py"
+    - run: mise run format {staged_files}
+      glob: "*.py"
