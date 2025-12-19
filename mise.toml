@@ -1,0 +1,8 @@
+[tools]
+lefthook = "latest"
+python = "3.13"
+uv = "latest"
+
+[tasks]
+lint = "ruff check . && ty check"
+format = "ruff check --fix . && ruff format ."
